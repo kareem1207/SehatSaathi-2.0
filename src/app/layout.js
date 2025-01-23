@@ -3,6 +3,8 @@ import { Footer } from "@/UI/Footer";
 import "./globals.css";
 import { Providers } from "@/Components/Themes";
 import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "SehatSaathi",
@@ -19,6 +21,8 @@ export default function RootLayout({ children }) {
           <main className="min-h-screen">
             <Header />
             {children}
+            <Analytics />
+            <SpeedInsights />
             <Footer />
           </main>
         </Providers>
