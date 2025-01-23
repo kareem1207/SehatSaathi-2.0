@@ -9,14 +9,16 @@ export const Chatbot = ({ isFullPage = false }) => {
     const [isLoading, setIsLoading] = useState(true)
     const [isFullscreen, setIsFullscreen] = useState(false)
     const [showDisclaimer, setShowDisclaimer] = useState(false)
+    const [chatbotUrl, setChatbotUrl] = useState('')
     const isMobile = useIsMobile()
 
     useEffect(() => {
+        // Set the URL after component mounts
+        setChatbotUrl(process.env.NEXT_PUBLIC_CHATBOT_URL || '')
         const timer = setTimeout(() => setIsLoading(false), 2000)
         return () => clearTimeout(timer)
     }, [])
 
-    // Return null for mobile popup version
     if (isMobile && !isFullPage) return null;
 
     // Determine container classes
@@ -96,12 +98,14 @@ export const Chatbot = ({ isFullPage = false }) => {
 
             {/* Chat Interface */}
             <div className={`w-full ${isFullscreen ? 'h-[calc(100vh-64px)]' : isFullPage ? 'h-[calc(100vh-64px)]' : 'h-[536px]'}`}>
-                <iframe
-                    src={process.env.CHATBOT_URL}  
-                    className="w-full h-full border-none"
-                    style={{ height: isFullscreen ? 'calc(100vh - 64px)' : '100%' }}
-                    title="SehatSaathi ChatBot"
-                />
+                {chatbotUrl && (
+                    <iframe
+                        src={chatbotUrl}
+                        className="w-full h-full border-none"
+                        style={{ height: isFullscreen ? 'calc(100vh - 64px)' : '100%' }}
+                        title="SehatSaathi ChatBot"
+                    />
+                )}
             </div>
         </motion.div>
     )

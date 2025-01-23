@@ -75,8 +75,8 @@ export const Header = () => {
             <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors duration-300 dark:text-white dark:hover:text-blue-600">
               About
             </Link>
-            <Link href="/chat-bot" className="text-gray-700 hover:text-blue-600 transition-colors duration-300 dark:text-white dark:hover:text-blue-600">
-              Chat bot
+            <Link href="/chatbot" className="text-gray-700 hover:text-blue-600 transition-colors duration-300 dark:text-white dark:hover:text-blue-600">
+              Chatbot
             </Link>
             <Link href="/sign-in" className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 w-fit">
               Sign In
