@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Sehat Saathi 2.0
 
-First, run the development server:
+## Introduction
+This web-based HEALTHCARE application has been developed for the accomplishment of the Future Ready Talent Internship program launched by Microsoft, Future Skills Prime, Quess, Github, and EY.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Description
+This web application addresses the COVID-19 information dissemination challenges,Counteracting misinformation, easing burden on facilities, and overcoming language barriers. Azure Health Bot ensures timely, credible information, empowering users and enhancing public health communication. Proactive measures mitigate spread, aligning with identified needs and opportunities.
+
+## Images
+
+### Screenshots
+
+#### AZURE HOME PAGE
+
+<img width="928" alt="frt home page" src="https://github.com/mnagajaideepchowdary/CovidHealthTech/assets/168766784/79d36941-15a9-4a1a-a65b-536ea4968f48">
+
+#### AZURE STATIC WEB APP SERVICE
+
+<img width="958" alt="static web app" src="https://github.com/mnagajaideepchowdary/CovidHealthTech/assets/168766784/68ed56f0-1e2e-472a-a0fd-684ff545a4d9">
+
+#### AZURE AI SERVICE(HEALTH BOT) HOME PAGE
+
+<img width="922" alt="health bot home" src="https://github.com/mnagajaideepchowdary/CovidHealthTech/assets/168766784/e54ce4de-b838-4b36-bc0d-73ba0a1ed70f">
+
+#### HEALTH BOT MANAGEMENT PORTAL
+
+<img width="925" alt="mg-1" src="https://github.com/mnagajaideepchowdary/CovidHealthTech/assets/168766784/e143ee1e-328d-4085-9ec0-a50d35034857">
+
+####  HEALTH BOT SCENARIOS
+
+<img width="925" alt="SYNARIOS " src="https://github.com/mnagajaideepchowdary/CovidHealthTech/assets/168766784/4d795d75-34a5-4355-a422-86bc50c0f4f6">
+
+### Outputs:
+
+Output 1: 
+![image 1](./public/output%201.png)
+Output 2: 
+![image 2](./public/output%202.png)
+Output 3: 
+![image 3](./public/output%203.png)
+Output 4: 
+![image 4](./public/output%204.png)
+
+
+## Features and Functionalities
+
+- Creative visual effects.
+- Attractive design and architecture
+- Multiple web pages including:
+  - Home
+  - About Us
+  - Services
+  - Contact
+  - HealthBot
+
+## Installation
+
+```
+    git clone https://github.com/kareem1207/SehatSaathi-2.0.git
+    cd SehatSaathi-2.0
+    npm install
+    npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Medical diagnosing
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contributing Guidelines
 
-## Learn More
+We welcome contributions! Please fork the repository, create a new branch, and submit a pull request with your changes.
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stacks
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next Js
+- React JS
+- Tailwind css
+- AZURE PORTAL
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> [!TIP]
+> This is our project link [Visit Site](https://sehatsaathi2.vercel.app/) once check it, to know how it works.
 
-## Deploy on Vercel
+> [!IMPORTANT]
+> Give your own chatbot and google maps api in place of "Chatbot" and "contact" session to access them, to work that feature to you.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> [!WARNING]
+> Don't edit anything in main branch, create a new branch and work.
