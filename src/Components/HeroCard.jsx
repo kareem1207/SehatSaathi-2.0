@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import { FaArrowRight, FaHeartbeat } from 'react-icons/fa'
 
 export const HeroCard = () => {
@@ -33,13 +34,16 @@ export const HeroCard = () => {
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
               Healthcare re-imagined for the modern age. Get 24/7 access to medical expertise, personalized care plans, and instant health insights at your fingertips.
             </p>
-
             <div className="flex flex-wrap gap-4">
               <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-semibold flex items-center gap-2 transition-all transform hover:scale-105">
+                <Link href="/chatbot" className='flex items-center gap-2'> 
                 Get Started <FaArrowRight />
+                </Link>
               </button>
               <button className="px-8 py-4 border-2 border-blue-600 text-blue-600 dark:text-white rounded-full font-semibold hover:bg-blue-50 dark:hover:bg-blue-900 transition-all">
+                <Link href="/about" className='flex items-center gap-2'>
                 Learn More
+                </Link>
               </button>
             </div>
 

@@ -16,3 +16,30 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+@layer components {
+  .mapboxgl-ctrl-group {
+    @apply !m-4;
+  }
+  
+  .mapboxgl-canvas {
+    @apply !rounded-2xl;
+  }
+  
+  .mapboxgl-popup-content {
+    @apply !rounded-xl !shadow-lg !p-4;
+  }
+}
+@layer components {
+  .mapboxgl-ctrl-group {
+    @apply !m-4;
+  }
+  
+  .mapboxgl-canvas {
+    @apply !rounded-2xl;
+  }
+  
+  .mapboxgl-popup-content {
+    @apply !rounded-xl !shadow-lg !p-4;
+  }
+}

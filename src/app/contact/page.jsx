@@ -14,6 +14,7 @@ import {
 import { FaWhatsapp, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import { BiMessageDetail } from 'react-icons/bi';
 import { RiCustomerService2Fill } from 'react-icons/ri';
+import   Map   from '@/Components/Map';
 
 const ContactPage = () => {
     const [formData, setFormData] = useState({
@@ -175,13 +176,7 @@ const ContactPage = () => {
         </section>
 
         <div className="relative h-[400px]">
-            <iframe
-                src={process.env.GOOGLE_API}
-                className="w-full h-full"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-            ></iframe>
+            <Map />
             <div className="absolute bottom-4 right-4 bg-white p-4 rounded-lg shadow-lg">
                 <h3 className="font-bold">Visit Us</h3>
                 <p className="text-gray-600">Telangana, India</p>
