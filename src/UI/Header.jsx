@@ -46,8 +46,8 @@ export const Header = () => {
             <Link href="/about" className="text-gray-700 hover:text-blue-600 transition-colors duration-300 dark:text-white dark:hover:text-blue-600">
               About
             </Link>
-            <Link href="/sign-in" className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-all duration-300">
-              Sign In
+            <Link href="/emergency" className="bg-red-300 text-red-600 px-4 py-2 rounded-full hover:bg-red-400 transition-all duration-300">
+              Emergency
             </Link>
             <DarkMode />
           </div>
@@ -78,8 +78,8 @@ export const Header = () => {
             <Link href="/chatbot" className="text-gray-700 hover:text-blue-600 transition-colors duration-300 dark:text-white dark:hover:text-blue-600">
               Chatbot
             </Link>
-            <Link href="/sign-in" className="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 w-fit">
-              Sign In
+            <Link href="/emergency" className="bg-red-300 text-red-600 px-4 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 w-fit">
+              Emergency
             </Link>
             <div className="pb-2">
               <DarkMode />
