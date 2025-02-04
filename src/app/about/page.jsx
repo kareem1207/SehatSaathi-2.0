@@ -139,6 +139,57 @@ const AboutPage = () => {
                     </motion.div>
                 </div>
             </section>
+
+            <section className="py-20 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+                <div className="container mx-auto max-w-6xl px-4">
+                    <motion.div 
+                        initial={{ y: 50, opacity: 0 }}
+                        animate={{ y: 0, opacity: 1 }}
+                        transition={{ delay: 0.6 }}
+                        className="grid md:grid-cols-2 gap-16 items-center"
+                    >
+                        <div>
+                            <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                                Technologies Used
+                            </h2>
+                            <p className="text-gray-600 dark:text-gray-300 mb-8">
+                                Powered by industry-leading technologies to deliver the best healthcare experience
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-3 gap-6 relative">
+                            {[
+                                { src: "/Technologies/azure.png", alt: "Azure", title: "Microsoft Azure" },
+                                { src: "/Technologies/react.png", alt: "React", title: "React.js" },
+                                { src: "/Technologies/nextjs.png", alt: "Next.js", title: "Next.js" },
+                                { src: "/Technologies/tailwind.png", alt: "Tailwind", title: "Tailwind CSS" },
+                                { src: "/Technologies/github.png", alt: "GitHub", title: "GitHub" },
+                                { src: "/Technologies/vercel.png", alt: "Vercel", title: "Vercel" },
+                            ].map((tech, index) => (
+                                <motion.div
+                                    key={tech.alt}
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ delay: 0.2 * index }}
+                                    className="group relative"
+                                >
+                                    <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
+                                        <img 
+                                            src={tech.src} 
+                                            alt={tech.alt}
+                                            className="w-16 h-16 object-contain mx-auto mb-4"
+                                        />
+                                        <p className="text-center text-sm font-medium text-gray-600 dark:text-gray-300">
+                                            {tech.title}
+                                        </p>
+                                    </div>
+                                </motion.div>
+                            ))}
+                            <div className="absolute -z-10 -bottom-8 -right-8 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl" />
+                            <div className="absolute -z-10 -top-8 -left-8 w-64 h-64 bg-purple-600/10 rounded-full blur-3xl" />
+                        </div>
+                    </motion.div>
+                </div>
+            </section>
         </>
     );
 };
