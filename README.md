@@ -33,13 +33,13 @@ This web application addresses the COVID-19 information dissemination challenges
 
 ### Outputs:
 
-Output 1: 
+Landing Page: 
 ![image 1](./public/output%201.png)
-Output 2: 
+Contact Page: 
 ![image 2](./public/output%202.png)
-Output 3: 
+About: 
 ![image 3](./public/output%203.png)
-Output 4: 
+HealthBot: 
 ![image 4](./public/output%204.png)
 
 
