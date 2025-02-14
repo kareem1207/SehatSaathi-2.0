@@ -33,7 +33,7 @@ This web application addresses the COVID-19 information dissemination challenges
 
 ### Outputs:
 
-Landing Page: 
+####Landing Page:
 ![image 1](./public/output%201.png)
 Contact Page: 
 ![image 2](./public/output%202.png)
